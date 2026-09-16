@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html style="cursor: url('/cursoron.png') 60 0, auto !important;">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hazel's Basement</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+  <!--
+Source - https://stackoverflow.com/a/7143883
+Posted by wizztjh, modified by community. See post 'Timeline' for change history
+Retrieved 2026-08-01, License - CC BYD-SA 4.0
+-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/cursor.js" data-autostart></script>
+
+    <div id="follow" style="z-index: 10; cursor: url('/cursoron.png') 60 0, auto !important;"><img id="followimg" src="" style="opacity:0.95;"/>
+    </div>
+
+    <div id="follow2" style="z-index:-1;"><img src="mask.png" style="opacity:0.2;"/>
+    </div>
+    
+    <img src="black3.png" style="z-index:10; position:absolute; left:0px; top:-80px;"/>
+
+    <lefter style="z-index: 6; position: absolute; left:-42px; bottom:0px;"></lefter>
+    <righter style="z-index: 6; position: absolute; right:-42px; bottom:0px;"></righter>
+
+    <div class="snowflake">.</div>
+    <div class="snowflake">.</div>
+    <div class="snowflake">.</div>
+    <div class="snowflake">.</div>
+    <div class="snowflake">.</div>
+    <div class="snowflake">.</div>
+    <div class="snowflake">.</div>
+    <div class="snowflake">.</div>
+    <div class="snowflake">.</div>
+    <div class="snowflake">.</div>
+    <div class="snowflake">.</div>
+    <div class="snowflake">.</div>
+   <bg>
+
+     <grid>
+      <header1 style="z-index: 7; height: 20px;">
+      </header1>
+
+      <img id="lamp" src="lampon.gif" style=" position:relative; z-index: 9; grid-column:3; grid-row:2; align-self: flex-start; justify-self: center; top:5px;">
+
+      <img id="tv" src="tvon.gif" style=" position:relative; z-index: 3; grid-column:1; grid-row:2; align-self: end; justify-self: right; bottom:10px;">
+
+      <section style="z-index: 3; position: relative; align-self: end; grid-column:1; grid-row:4; width:250px; height: 250px; left:30px; bottom:-5px;">
+       <header>
+        <h2>Site Guide</h2>
+       </header>
+       <p>To get around the site, use the holes in the floor!</p>
+        <p style="color:white;">1 - home</p>
+        <p>2 - about me</p>
+        <p>3 - guestbook + links to friends' sites</p>
+        <p>4 - useful links, blog + interviews</p>
+      </section>
+    
+      <section style="z-index: 3; position: relative; align-self: end; grid-column:1; grid-row:3; width:250px; height: 250px; left:80px;">
+       <header>
+        <h2>Who Am I?</h2>
+       </header>
+       <p>Hi! I'm Hazel, although you may know me as Poserdom, Alifeofposerdom, Aoife, or any of the various other names and usernames I've gone by in my time online. I dabble in music, art, film, writing, development and many other things! This website is a personal project for me to serve as a home for my online activity...</p>
+      </section>
+
+      <img id="fan" src="fan.gif" style="z-index: 3; position: relative; justify-self:right; align-self: end; grid-column:5; grid-row:4; left:30px; bottom:-5px;">
+
+      <p onclick= "lightswitch()" style="z-index:20; position: relative; justify-self: right; align-self: center; grid-column:4; grid-row:3; left:-62px; top:70px; width:50px; height:70px;"></p>
+
+      <p onclick= "fanfunc()" style="z-index:20; position: relative; justify-self:right; align-self: end; grid-column:5; grid-row:4; right:20px; bottom:-20px; width:260px; height:290px;"></p>
+
+      <p onclick= "tvfunc()" style="z-index:20; position:relative; grid-column:1; grid-row:2; align-self: end; justify-self: right; bottom:0px; width:190px; height:160px;"></p>
+
+      <img id="switch" src="/switchon.png" style="z-index: 3; position: relative; justify-self:right; align-self: end; grid-column:4; grid-row:4; right:-1.5px; bottom:-10px;">
+
+      <img id="arrow2" src="arrow.gif" style="opacity:0; z-index: 5; position: relative; justify-self:center; align-self: flex-start; grid-column:3; grid-row:5; bottom:100px;">
+      <a href="aboutme.html" onmouseover="fadein1()" onmouseout="fadeout1()" style="z-index:20; position:relative; align-self:end; grid-column:3; grid-row:5; width:800px; height:300px;"></a>
+
+      <img src="bgbox1.png" style="position:fixed; z-index:-10; grid-row:5; grid-column:2; left:0px; bottom:50px;">
+      <img src="bgbox1.png" style="position:fixed; z-index:-10; grid-row:5; grid-column:2; right:50px; bottom:50px;">
+
+      <img onclick="m1c()"; id="mouse1" src="mouseL1.gif" style="z-index:5; position:relative; left:-158px; align-self: end; grid-column:1; grid-row:4;">
+
+      <img onclick="m2c()"; id="mouse2" src="mouseR1.gif" style="z-index:5; position:relative; right: -158px; justify-self: end; align-self: end; grid-column:5; grid-row:4;">
+
+      <audio id="fansound" src="fan.mp3"></audio>
+      <audio id="tvsound" src="tv.wav"></audio>
+
+      <script src="interactions.js" data-autostart></script>
+      <script src="/lights.js" data-autostart></script>
+      <script src="/move.js" data-autostart></script>
+      <script src="/rats.js" data-autostart></script>
+      <script src="/audio.js" data-autostart></script>
+
+      <footer style="z-index: 7; height: 100px; align-self: start; left: -10px;">
+       <p text-align=right style="z-index: 4; position:relative; top:-10px; right:20px;">made with ♡ by hazel<br>all art, music + animation by me</p>
+      </footer>
+
+    </grid>
+   </bg>
+  </body>
+</html>
